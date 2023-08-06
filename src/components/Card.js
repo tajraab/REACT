@@ -1,5 +1,6 @@
 import React from "react";
 import "./card.css";
+import Button from "./Button";
 function Card(props) {
   const { cena, marka } = props;
   //console.log(props,"Ovo je props)
@@ -8,8 +9,10 @@ function Card(props) {
     <div className="card">
       <img src="patike.jpg"></img>
       <h1>{marka}</h1>
+      <h1>{nekepatike}</h1>
       <h5>Duboke,nepromocive patike,narandzaste boje </h5>
-      <p>Cena artikla:14.990</p>
+      <p>{cena} -cena artikla</p>
+      <Button title={cena} />
     </div>
   );
 }

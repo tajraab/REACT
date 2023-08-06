@@ -1,7 +1,6 @@
 import React from "react";
-function Button(props) {
-  const { title } = props;
+const Button = (props) => {
+  return <button>{props.title}</button>;
+};
 
-  return <div>{title}</div>;
-}
 export default Button;
