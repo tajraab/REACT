@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./card.css";
 import Button from "./components/Button";
 
 function App() {
   return (
     <div>
-      <Button title="izbrisi" />
+      <Card title="Jordan" />
     </div>
   );
 }

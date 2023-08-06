@@ -1,13 +1,17 @@
 import React from "react";
 import "./card.css";
-function Card() {
+function Card(props) {
+  const { cena, marka } = props;
+  //console.log(props,"Ovo je props)
+  const nekepatike = "marka";
   return (
     <div className="card">
-      <h1>Tajra Bacevac</h1>
-      <h5>Neki opis kratki o meni,koji ce da pomogne tokom upoznavanja</h5>
-      <p>Rodjena 2006.godine</p>
+      <img src="patike.jpg"></img>
+      <h1>{marka}</h1>
+      <h5>Duboke,nepromocive patike,narandzaste boje </h5>
+      <p>Cena artikla:14.990</p>
     </div>
   );
 }
 export default Card;
-//npm start
+//npm star
