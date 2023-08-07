@@ -2,7 +2,7 @@ import React from "react";
 import "./card.css";
 import Button from "./Button";
 function Card(props) {
-  const { cena, marka } = props;
+  const { cena, marka, opis } = props;
   //console.log(props,"Ovo je props)
   const nekepatike = "marka";
   return (
