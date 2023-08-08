@@ -10,7 +10,7 @@ function Card(props) {
       <img src="patike.jpg"></img>
       <h1>{marka}</h1>
       <h1>{nekepatike}</h1>
-      <h5>Duboke,nepromocive patike,narandzaste boje </h5>
+      <h5>{opis} </h5>
       <p>{cena} -cena artikla</p>
       <Button title={cena} />
     </div>
