@@ -1,17 +1,26 @@
 export const customProducts = [
   {
-    title: "Air Force 1",
-    description: "Old fashion sneakers for every day",
+    title: "phone 1",
+    description: "Used phone with good memory",
     price: "110$",
+    discountPercentage: "20%",
+    brand: "iphone 11",
+    stock: "52",
   },
   {
-    title: "Air Jordan",
-    description: "Good old Jordan for fresh look",
+    title: "phone 2",
+    description: "New phone with good battery",
     price: "210$",
+    discountPercentage: "15%",
+    brand: "samsung a42",
+    stock: "53",
   },
   {
-    title: "Adidas Superstar",
-    description: "Sneakers for every day",
-    price: "100$",
+    title: "phone 3",
+    description: "The latest on the market",
+    price: "320$",
+    discountPercentage: "25%",
+    brand: "iphone 15",
+    stock: "72",
   },
 ];
