@@ -8,7 +8,7 @@ function Cas7avgust() {
   const fetchData = () => {
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
-      .then((someData) => someData.filter)
+      // .then((someData) => someData.filter)
       .then((data) => setAllData(data.products));
   };
   console.log(allData);
@@ -29,16 +29,20 @@ function Cas7avgust() {
       <div style={{ marginTop: "300px" }}>
         <button onClick={() => fetchData()}>Klikni</button>
       </div>
-      {/*{customProducts.map((product,i)=>( 
+      {allData.map((product, i) => (
         <Card
-      key={i}
-    title={product.title}
-  description={product.description}
-price={product.price}/>
-  )  ) }*/}
+          key={i}
+          title={product.title}
+          description={product.description}
+          price={product.price}
+        />
+      ))}
     </div>
   );
 }
+///kada mapiramo sve koristimo {product.description,product.stock itd}
+//mat.random
+//<h1 style{isSwitchOn ?{color:"red"}}
 //   const [broj, setBroj] = useState(0);
 //   return (
 //     <div classname="app">
