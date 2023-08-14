@@ -133,5 +133,18 @@ function Cas7avgust() {
 //     </div>
 //   );
 // }
+function Cas7avgust(){
+  const [broj,setBroj]=useState([20,12,10,11,30]);
+  function buttonClicked(broj){
+    alert(`${broj }ste kliknuli`)
+  }
+  return(
+    <div classname="mapp">
+      {broj.map((el=>{return<Button title={el}onPress={()=>buttonClicked(el)}/>
+       } ) }
+      </div>
+
+  );
+}
 
 export default Cas7avgust;
