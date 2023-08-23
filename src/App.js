@@ -4,24 +4,24 @@ import Card from "./components/Card";
 import Button from "./components/Button";
 import Cas7avgust from "./components/Cas7avgust";
 
-function App() {
-  const [allData, setAllData] = useState([]);
-  const fetchData = () => { fetch("https://dummyjson.com/products")
-      .then((res) => res.json())
-      .then((someData) => someData.filter((el)=>...........)  )
-     .then((data) => setAllData(data.products));
-   };
-  const[isSwitchOn,setlsSwitchOn]=useState(false)};
-  console.log(isSwitchOn);
-  return (
-    <div className="app">
-      {/*{allData.length&&(
-        <div style={{marginTop:"300px",textAlign:"center"}}> 
-<h1>Nema podataka</h1>
+// function App() {
+//   const [allData, setAllData] = useState([]);
+//   const fetchData = () => { fetch("https://dummyjson.com/products")
+//       .then((res) => res.json())
+//       .then((someData) => someData.filter((el))  )
+//      .then((data) => setAllData(data.products));
+//    };
+//   const[isSwitchOn,setlsSwitchOn]=useState(false)};
+//   console.log(isSwitchOn);
+//   return (
+//     <div className="app">
+// {/*{!allData.length &&(
+//         <div style={{marginTop:"300px",textAlign:"center"}}> 
+{/* <h1>Nema podataka</h1>
 <button onClick={()=>fetchData()}>Fetchaj podatke</button>
       
-    </div>
-     ) }
+     </div>
+     ) } */}
     // <div className="app">
     //   <Card marka="Jordan" opis="Duboke,nepromovice patike" cena="12900" />
     //   <Card marka="Nike" opis="Udobne patike,povoljne cene" cena="10200" />
@@ -31,7 +31,42 @@ function App() {
    // <div>
      // <Cas7avgust />
    // </div>
-  );
-}
+  // );
+// }
 
-export default App;
+
+
+
+//export default App;
+export default function App(){
+  //PRVI DOMACI ZADATAK
+  const [allData,setAllData]=useState([]);
+  const fetchData=()=>{
+    fetch("https://dummyjson.com/products")
+     .then((res) => res.json())
+     .then((data)=>{
+      const filteredArray=data.products.filter((el)=>el.category==="smartphones" );
+      setAllData(filteredArray)
+     });
+  };
+  console.log(allData);
+  return(
+    <div>
+      {!allData. length &&(
+        <div>
+          <h1>Nema trenutnih podataka</h1>
+          <button onClick={()=>fetchData()}>Fetchaj podatke</button>
+          </div>
+      )}
+      {allData.length?(
+        <div style={{
+          padding:"20px 10px",
+          display:"flex",
+          justifyContent:"space-evenly",
+          flexWrap:"wrap"
+        }}
+        >
+      )}
+    </div>
+  )
+}
