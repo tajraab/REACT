@@ -176,3 +176,6 @@ function Cas7avgust() {
   );
 }
 export default Cas7avgust;
+//name.length<4=>izbaciti border crvene boje
+//email-regex validacija
+//fun(){5*if()}
