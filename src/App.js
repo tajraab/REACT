@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import React, { useState } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import Button from "./components/Button";
@@ -38,6 +39,9 @@ import NumberContainer from "./numberContainer/NumberContainer";
 // }
 
 //export default App;
+import React, { useState } from "react";
+import Card from "./kartica.js";
+import NumberContainer from "./numberContainer/NumberContainer";
 export default function App() {
   //PRVI DOMACI ZADATAK
   const [allData, setAllData] = useState([]);
