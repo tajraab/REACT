@@ -3,6 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import Button from "./components/Button";
 import Cas7avgust from "./components/Cas7avgust";
+import NumberContainer from "./numberContainer/NumberContainer";
 
 // function App() {
 //   const [allData, setAllData] = useState([]);

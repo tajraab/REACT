@@ -4,66 +4,66 @@ import Button from "./Button";
 import { customProducts } from "./data/data";
 import Card from "./Card";
 
-function Cas7avgust() {
-  function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-  return (
-    <div classname="app">
-      <div name="card">
-        <h1>BROJ CELZIJUSA</h1>
-        <button onClick={() => console.log(getRandomArbitrary(-36, 48))}>
-          Promeni temperaturu
-        </button>
-      </div>
-    </div>
-  );
+// function Cas7avgust() {
+//   function getRandomArbitrary(min, max) {
+//     return Math.random() * (max - min) + min;
+//   }
+//   return (
+//     <div classname="app">
+//       <div name="card">
+//         <h1>BROJ CELZIJUSA</h1>
+//         <button onClick={() => console.log(getRandomArbitrary(-36, 48))}>
+//           Promeni temperaturu
+//         </button>
+//       </div>
+//     </div>
+//   );
 
-  // const [allData, setAllData] = useState([]);
-  // const fetchData = () => {
-  //   fetch("https://dummyjson.com/products")
-  //     .then((res) => res.json())
-  //     // .then((someData) => someData.filter)
-  //     .then((data) => setAllData(data.products));
-  // };
-  // console.log(allData);
-  //return (
-  // <div className="app">
-  //{
-  //     /*{allData.map((product)=>
-  //       <Card title={product.title}
-  //       description={product.description}
-  //       price={product.price}
-  //       />
-  //       )}}*/
-  //   }
-  //   {
-  //     /*{!allData.length&&<h1>Nema podataka,kliknite da biste</h1>}*/
-  //   }
-  //   {/* //     {allData.length ? ( */}
-  //      <h1>BROJ CELZIJUSA</h1>
-  //   //     ) : (
-  //   //       <h1>NEMA PODATAKA KLIKNITE, DA BISTE</h1>
-  //   //     )}
-  //   //     <div style={{ marginTop: "300px" }}>
-  //   //       <button onClick={() =><Promeni temperaturu></Promeni></button>
-  //   //     </div>
-  //   //     {allData.map((product, i) => (
-  //   //       <Card
-  //   //         key={i}
-  //   //         title={product.title}
-  //   //         description={product.description}
-  //   //         price={product.price}
-  //   //       />
-  //      ))}
-  //      </div>
-  //   // );
-  // }
-  // ///kada mapiramo sve koristimo {product.description,product.stock itd}
-  // //na button moramo da setujemo state od do.
-  // const shangeNumber = () => {
-  //   const a = Math.random(10123 - 2) * 100;
-}
+// const [allData, setAllData] = useState([]);
+// const fetchData = () => {
+//   fetch("https://dummyjson.com/products")
+//     .then((res) => res.json())
+//     // .then((someData) => someData.filter)
+//     .then((data) => setAllData(data.products));
+// };
+// console.log(allData);
+//return (
+// <div className="app">
+//{
+//     /*{allData.map((product)=>
+//       <Card title={product.title}
+//       description={product.description}
+//       price={product.price}
+//       />
+//       )}}*/
+//   }
+//   {
+//     /*{!allData.length&&<h1>Nema podataka,kliknite da biste</h1>}*/
+//   }
+//   {/* //     {allData.length ? ( */}
+//      <h1>BROJ CELZIJUSA</h1>
+//   //     ) : (
+//   //       <h1>NEMA PODATAKA KLIKNITE, DA BISTE</h1>
+//   //     )}
+//   //     <div style={{ marginTop: "300px" }}>
+//   //       <button onClick={() =><Promeni temperaturu></Promeni></button>
+//   //     </div>
+//   //     {allData.map((product, i) => (
+//   //       <Card
+//   //         key={i}
+//   //         title={product.title}
+//   //         description={product.description}
+//   //         price={product.price}
+//   //       />
+//      ))}
+//      </div>
+//   // );
+// }
+// ///kada mapiramo sve koristimo {product.description,product.stock itd}
+// //na button moramo da setujemo state od do.
+// const shangeNumber = () => {
+//   const a = Math.random(10123 - 2) * 100;
+// }
 {
   /* //mat.random */
 }
