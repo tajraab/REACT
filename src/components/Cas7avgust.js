@@ -147,8 +147,40 @@ import Card from "./Card";
 // );
 // /}
 
+// function Cas7avgust() {
+//   const [myName, setMyName] = useState("");
+//   return (
+//     <div
+//       style={{
+//         height: "100vh",
+//         width: "100vw",
+//         display: "flex",
+//         justifyContent: "space-evenly",
+//         alignItems: "center",
+//         flexDirection: "column",
+//       }}
+//     >
+//       <form
+//         style={{ display: "flex", flexDirection: "column", gap: "20" }}
+//         onSubmit={(e) => e.preventDefault()}
+//       >
+//         <input
+//           type="text"
+//           placeholder="Neki input"
+//           value={myName}
+//           onChange={(e) => setMyName(e.target.value)}
+//         />
+//         <button onClick={() => console.log(myName)}>Zavrsi</button>
+//       </form>
+//     </div>
+//   );
+// }
+// export default Cas7avgust;
+//name.length<4=>izbaciti border crvene boje
+//email-regex validacija
+//fun(){5*if()}
 function Cas7avgust() {
-  const [myName, setMyName] = useState("");
+  const [myName, setmyName] = useState("");
   return (
     <div
       style={{
@@ -159,23 +191,6 @@ function Cas7avgust() {
         alignItems: "center",
         flexDirection: "column",
       }}
-    >
-      <form
-        style={{ display: "flex", flexDirection: "column", gap: "20" }}
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          type="text"
-          placeholder="Neki input"
-          value={myName}
-          onChange={(e) => setMyName(e.target.value)}
-        />
-        <button onClick={() => console.log(myName)}>Zavrsi</button>
-      </form>
-    </div>
+    ></div>
   );
 }
-export default Cas7avgust;
-//name.length<4=>izbaciti border crvene boje
-//email-regex validacija
-//fun(){5*if()}
