@@ -191,6 +191,11 @@ function Cas7avgust() {
         alignItems: "center",
         flexDirection: "column",
       }}
-    ></div>
+    >
+      <form
+        style={{ display: "flex", flexDirection: "column", gap: "20" }}
+        onSubmit={(e) => e.preventDefault()}
+      ></form>
+    </div>
   );
 }
